@@ -1,0 +1,27 @@
+.site-header{
+    position: relative;
+    height: 100vh;
+    // width: 100vw;
+    background: url(../assets/hero-image.jpg) center/cover fixed;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(#000000, 0.4) ;
+    }
+
+    &__h1{
+        position: absolute;
+        bottom: 50%;
+        text-align: center;
+        z-index: 1;
+        // left: 50%;
+        // right: 50%;
+        width: 100%;
+    }
+
+}

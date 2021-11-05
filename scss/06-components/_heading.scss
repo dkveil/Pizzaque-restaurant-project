@@ -3,14 +3,15 @@
 
 .heading{
     &--h1{
-        // color:;
+        color: $color-white;
         font-family: 'Courgette', cursive;
-        font-size: 6rem;
+        font-size: 3.5rem;
+        text-shadow: 0 0 3px black;
         @include medium{
-            font-size: 8rem;
+            font-size: 5rem;
         }
         @include large{
-            font-size: 10rem;
+            font-size: 5rem;
         }
     }
     &--h2{
