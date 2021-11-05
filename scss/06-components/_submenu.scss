@@ -1,0 +1,27 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.submenu{
+        background-color: $color-gray;
+        transition: all 650ms ease;
+        opacity: 0;
+        visibility: hiden;
+        &::before{
+            @include medium{
+                border: 1.2rem solid transparent;
+                border-bottom-color: $color-yellow;
+            }
+        }
+        &__item{
+            border-bottom: 2px solid $color-yellow;
+            &:first-child{
+                border-top: 2px solid $color-yellow
+            }
+        }
+        &__link{
+            padding: $gutter;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }

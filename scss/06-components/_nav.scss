@@ -1,0 +1,50 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.nav{
+    &__logo{
+        font-size:4rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Courgette', cursive;
+        color: $color-white;
+        text-shadow: 0 0 2px black;
+    }
+    &__item{
+        font-size: 1.6rem;
+        line-height: 8rem;
+        @include medium{
+            font-size:1.3rem;
+
+        }
+        @include large{
+            font-size:1.6rem;
+        }
+        &--submenu{
+            line-height: 4rem;
+        }
+    }
+    &__link{
+        // font-size: 2.2;
+        text-decoration: none;
+        color: $color-white;
+        text-transform: uppercase;
+        text-shadow: 0 0 2px black;
+        transition: color 400ms;
+        &:hover{
+            color: $color-yellow;
+            text-shadow: 0 0 8px black;
+        }
+    }
+    &__menu-icons{
+        font-size: 4rem;
+        color: $color-white;
+        cursor: pointer;
+    }
+    &__submenu{
+        // padding: $gutter;
+        background-color: $color-gray;
+        border-bottom: 2px solid $color-yellow;
+        border-top: 2px solid $color-yellow;
+    }
+}

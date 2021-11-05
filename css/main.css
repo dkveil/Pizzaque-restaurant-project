@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+@import 'material-icons/iconfont/material-icons.css';
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -55,6 +56,10 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
 html {
@@ -153,8 +158,8 @@ p {
 .heading--h1 {
   color: white;
   font-family: "Courgette", cursive;
-  font-size: 3.5rem;
-  text-shadow: 0 0 3px black;
+  font-size: 4rem;
+  text-shadow: 0 0 2px black;
 }
 @media screen and (min-width: 768px) {
   .heading--h1 {
@@ -163,7 +168,7 @@ p {
 }
 @media screen and (min-width: 1240px) {
   .heading--h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 .heading--h2 {
@@ -171,6 +176,89 @@ p {
   font-size: 5rem;
   width: 100%;
   text-align: center;
+}
+.heading--h4 {
+  position: relative;
+  color: white;
+  font-size: 1.4rem;
+  text-shadow: 0 0 1px black;
+}
+@media screen and (min-width: 768px) {
+  .heading--h4 {
+    font-size: 1.8rem;
+  }
+}
+
+.nav__logo {
+  font-size: 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Courgette", cursive;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+.nav__item {
+  font-size: 1.6rem;
+  line-height: 8rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .nav__item {
+    font-size: 1.6rem;
+  }
+}
+.nav__item--submenu {
+  line-height: 4rem;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px black;
+  transition: color 400ms;
+}
+.nav__link:hover {
+  color: #facb75;
+  text-shadow: 0 0 8px black;
+}
+.nav__menu-icons {
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+}
+.nav__submenu {
+  background-color: #333333;
+  border-bottom: 2px solid #facb75;
+  border-top: 2px solid #facb75;
+}
+
+.submenu {
+  background-color: #333333;
+  transition: all 650ms ease;
+  opacity: 0;
+  visibility: hiden;
+}
+@media screen and (min-width: 768px) {
+  .submenu::before {
+    border: 1.2rem solid transparent;
+    border-bottom-color: #facb75;
+  }
+}
+.submenu__item {
+  border-bottom: 2px solid #facb75;
+}
+.submenu__item:first-child {
+  border-top: 2px solid #facb75;
+}
+.submenu__link {
+  padding: 15px;
+}
+.submenu:hover {
+  opacity: 1;
 }
 
 .site-header {
@@ -185,14 +273,102 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.site-header__nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 14rem;
+  z-index: 1;
 }
 .site-header__h1 {
   position: absolute;
+  width: 100%;
   bottom: 50%;
   text-align: center;
   z-index: 1;
+  line-height: 1.25;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 14rem;
+  z-index: 2;
+}
+.site-nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-nav__menu {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .site-nav__menu {
+    display: none;
+  }
+}
+.site-nav__list {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 14rem;
+}
+@media screen and (min-width: 768px) {
+  .site-nav__list {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+  }
+}
+.site-nav__item--submenu {
+  position: absolute;
   width: 100%;
+}
+.site-nav__submenu {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  position: absolute;
+  left: 15rem;
+}
+@media screen and (min-width: 768px) {
+  .site-nav__submenu {
+    top: 14rem;
+  }
+}
+
+.site-submenu {
+  z-index: 2;
+}
+.site-submenu::before {
+  top: 0.9rem;
+  left: -2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .site-submenu::before {
+    content: "";
+    position: absolute;
+    top: -2.4rem;
+    left: 3rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
