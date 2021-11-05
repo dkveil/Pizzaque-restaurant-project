@@ -1,0 +1,9 @@
+@use '../01-settings/' as *;
+
+p{
+    // font-family: ;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: $grid-base;
+    margin-top: $grid-base * 1.5;
+}
