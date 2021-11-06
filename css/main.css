@@ -160,18 +160,18 @@ p {
 .heading--h1 {
   color: white;
   font-family: "Courgette", cursive;
-  font-size: 4.5rem;
+  font-size: 5rem;
   text-shadow: 0 0 2px black;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .heading--h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 1240px) {
   .heading--h1 {
-    font-size: 6rem;
+    font-size: 6.5rem;
   }
 }
 .heading--h2 {
@@ -183,17 +183,17 @@ p {
 .heading--h4 {
   position: relative;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-shadow: 0 0 1px black;
 }
 @media screen and (min-width: 768px) {
   .heading--h4 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 1240px) {
   .heading--h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -251,18 +251,19 @@ p {
   cursor: pointer;
 }
 .btn--start {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 0.8rem 1.4rem;
   background-color: white;
   color: crimson;
   border-radius: 0.2rem;
+  transition: all 0.6s;
 }
 .btn--start:hover {
   color: #fcc45c;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px black;
   transition: all 0.6s;
-  text-shadow: 0 0 20px black;
 }
 
 .site-header {
@@ -295,6 +296,9 @@ p {
   .site-header__subheader {
     margin: 2rem auto;
   }
+}
+.site-header__btn {
+  margin-top: 0.5rem;
 }
 
 @keyframes slideNav {
