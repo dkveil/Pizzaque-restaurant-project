@@ -29,11 +29,11 @@
         text-decoration: none;
         color: $color-white;
         text-transform: uppercase;
-        text-shadow: 0 0 2px black;
-        transition: color 400ms;
+        text-shadow: 0 0 3px black;
+        transition: color text-shadow 400ms;
         &:hover{
             color: $color-yellow;
-            text-shadow: 0 0 8px black;
+            text-shadow: 0 0 10px black;
         }
     }
     &__menu-icons{
