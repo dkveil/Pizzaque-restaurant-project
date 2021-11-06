@@ -3,13 +3,11 @@
 
 @keyframes slideNav{
     0%{
-
     }
     100%{
         transform: translateX(0);
     }
 }
-
 .site-nav{
         display: flex;
         justify-content: space-between;
@@ -31,7 +29,6 @@
                 transform: translateX(100rem);
                 animation: slideNav .5s forwards;
             }
-
         }
         &__item{
             @include medium{

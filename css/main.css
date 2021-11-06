@@ -355,20 +355,4 @@ p {
   transform: scaleX(1);
 }
 
-.site-submenu {
-  z-index: 2;
-}
-.site-submenu::before {
-  top: 0.9rem;
-  left: -2.5rem;
-}
-@media screen and (min-width: 768px) {
-  .site-submenu::before {
-    content: "";
-    position: absolute;
-    top: -2.4rem;
-    left: 3rem;
-  }
-}
-
 /*# sourceMappingURL=main.css.map */
