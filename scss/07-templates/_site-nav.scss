@@ -34,7 +34,12 @@
 
         }
         &__item{
-            margin: 0 2rem;
+            @include medium{
+                margin: 0 1rem;
+            }
+            @include large{
+                margin: 0 2rem;
+            }
             &:last-child{
                 margin-right: 0;
             }

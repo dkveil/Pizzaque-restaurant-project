@@ -317,8 +317,15 @@ p {
     animation: slideNav 0.5s forwards;
   }
 }
-.site-nav__item {
-  margin: 0 2rem;
+@media screen and (min-width: 768px) {
+  .site-nav__item {
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .site-nav__item {
+    margin: 0 2rem;
+  }
 }
 .site-nav__item:last-child {
   margin-right: 0;
