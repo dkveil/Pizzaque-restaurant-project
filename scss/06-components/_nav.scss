@@ -2,6 +2,11 @@
 @use '../02-tools/' as *;
 
 .nav{
+    background-color: $color-gray;
+    // border-right: 2px solid $color-red ;
+    @include medium{
+        background-color: transparent;
+    }
     &__logo{
         font-size:4rem;
         text-decoration: none;
@@ -30,21 +35,10 @@
         color: $color-white;
         text-transform: uppercase;
         text-shadow: 0 0 3px black;
-        transition: color text-shadow 400ms;
+        transition: all 400ms;
         &:hover{
             color: $color-yellow;
             text-shadow: 0 0 10px black;
         }
-    }
-    &__menu-icons{
-        font-size: 4rem;
-        color: $color-white;
-        cursor: pointer;
-    }
-    &__submenu{
-        // padding: $gutter;
-        background-color: $color-gray;
-        border-bottom: 2px solid $color-yellow;
-        border-top: 2px solid $color-yellow;
     }
 }

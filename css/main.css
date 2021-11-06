@@ -65,6 +65,7 @@ body {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -159,8 +160,9 @@ p {
 .heading--h1 {
   color: white;
   font-family: "Courgette", cursive;
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-shadow: 0 0 2px black;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .heading--h1 {
@@ -181,15 +183,28 @@ p {
 .heading--h4 {
   position: relative;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-shadow: 0 0 1px black;
 }
 @media screen and (min-width: 768px) {
+  .heading--h4 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1240px) {
   .heading--h4 {
     font-size: 1.8rem;
   }
 }
 
+.nav {
+  background-color: #333333;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    background-color: transparent;
+  }
+}
 .nav__logo {
   font-size: 4rem;
   text-decoration: none;
@@ -220,46 +235,34 @@ p {
   color: white;
   text-transform: uppercase;
   text-shadow: 0 0 3px black;
-  transition: color text-shadow 400ms;
+  transition: all 400ms;
 }
 .nav__link:hover {
   color: #fcc45c;
   text-shadow: 0 0 10px black;
 }
-.nav__menu-icons {
-  font-size: 4rem;
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
   color: white;
   cursor: pointer;
 }
-.nav__submenu {
-  background-color: #333333;
-  border-bottom: 2px solid #fcc45c;
-  border-top: 2px solid #fcc45c;
+.btn--start {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.8rem 1.4rem;
+  background-color: white;
+  color: crimson;
+  border-radius: 0.2rem;
 }
-
-.submenu {
-  background-color: #333333;
-  transition: all 650ms ease;
-  opacity: 0;
-  visibility: hiden;
-}
-@media screen and (min-width: 768px) {
-  .submenu::before {
-    border: 1.2rem solid transparent;
-    border-bottom-color: #fcc45c;
-  }
-}
-.submenu__item {
-  border-bottom: 2px solid #fcc45c;
-}
-.submenu__item:first-child {
-  border-top: 2px solid #fcc45c;
-}
-.submenu__link {
-  padding: 15px;
-}
-.submenu:hover {
-  opacity: 1;
+.btn--start:hover {
+  color: #fcc45c;
+  background-color: transparent;
+  transition: all 0.6s;
+  text-shadow: 0 0 20px black;
 }
 
 .site-header {
@@ -275,16 +278,23 @@ p {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 14rem;
-  z-index: 1;
+  height: 18rem;
+  z-index: 2;
 }
 .site-header__h1 {
   position: absolute;
   width: 100%;
-  bottom: 50%;
+  bottom: 45%;
   text-align: center;
   z-index: 1;
-  line-height: 1.25;
+}
+.site-header__subheader {
+  margin: 1.6rem auto;
+}
+@media screen and (min-width: 768px) {
+  .site-header__subheader {
+    margin: 2rem auto;
+  }
 }
 
 @keyframes slideNav {
@@ -303,27 +313,54 @@ p {
 }
 .site-nav__logo {
   transform: translateX(-100rem);
-  animation: slideNav 0.5s forwards;
+  animation: slideNav 0.6s forwards;
 }
 .site-nav__list {
   display: flex;
-  position: absolute;
   flex-direction: column;
-  top: 14rem;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 5rem;
+  width: 83%;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+.site-nav__list::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s;
+}
+@media screen and (min-width: 768px) {
+  .site-nav__list::before {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .site-nav__list {
     display: flex;
     flex-direction: row;
+    height: 16rem;
+    justify-content: flex-end;
     position: static;
     align-items: center;
     transform: translateX(100rem);
-    animation: slideNav 0.5s forwards;
+    animation: slideNav 0.6s forwards;
   }
 }
 @media screen and (min-width: 768px) {
   .site-nav__item {
-    margin: 0 1rem;
+    margin: 0 0.8rem;
   }
 }
 @media screen and (min-width: 1240px) {
