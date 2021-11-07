@@ -1,46 +1,45 @@
-@use '../01-settings/' as *;
-@use '../02-tools/' as *;
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
 
-.nav{
-    background-color: $color-gray;
-    // border-right: 2px solid $color-red ;
-    @include medium{
-        background-color: transparent;
+.nav {
+  background-color: $color-gray;
+  // border-right: 2px solid $color-red ;
+  @include medium {
+    background-color: transparent;
+  }
+  &__logo {
+    font-size: 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Courgette", cursive;
+    color: $color-white;
+    text-shadow: 0 0 2px black;
+  }
+  &__item {
+    font-size: 1.6rem;
+    line-height: 8rem;
+    @include medium {
+      font-size: 1.3rem;
     }
-    &__logo{
-        font-size:4rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Courgette', cursive;
-        color: $color-white;
-        text-shadow: 0 0 2px black;
+    @include large {
+      font-size: 1.6rem;
     }
-    &__item{
-        font-size: 1.6rem;
-        line-height: 8rem;
-        @include medium{
-            font-size:1.3rem;
-
-        }
-        @include large{
-            font-size:1.6rem;
-        }
-        &--submenu{
-            line-height: 4rem;
-        }
+    &--submenu {
+      line-height: 4rem;
     }
-    &__link{
-        // font-size: 2.2;
-        text-decoration: none;
-        color: $color-white;
-        text-transform: uppercase;
-        text-shadow: 0 0 3px black;
-        transition: all 400ms;
-        &:hover{
-            color: $color-yellow;
-            background-color: rgba(#000000,0.2);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-            text-shadow: 0 0 10px black;
-        }
+  }
+  &__link {
+    // font-size: 2.2;
+    text-decoration: none;
+    color: $color-white;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px black;
+    transition: all 400ms;
+    &:hover {
+      color: $color-yellow;
+      background-color: rgba(#000000, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      text-shadow: 0 0 10px black;
     }
+  }
 }

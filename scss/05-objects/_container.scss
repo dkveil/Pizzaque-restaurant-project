@@ -1,17 +1,16 @@
-@use '../01-settings/' as *;
-@use '../02-tools/' as *;
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
 
-.container{
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0 $gutter;
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 $gutter;
 
-    @include medium{
-        max-width: 100 * $grid-base;
-    }
+  @include medium {
+    max-width: 100 * $grid-base;
+  }
 
-    @include large{
-        max-width: 120 * $grid-base;
-    }
-
+  @include large {
+    max-width: 120 * $grid-base;
+  }
 }

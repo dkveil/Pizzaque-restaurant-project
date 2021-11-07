@@ -1,36 +1,41 @@
-@use '../01-settings/' as *;
-@use '../02-tools/' as *;
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
 
-.site-header{
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(66, 7, 7, 0.45),rgba(0,0,0,.9)),  url(../assets/hero-image.jpg) center/cover fixed;
-    &__nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 18rem;
-        z-index: 2;
-    }
+.site-header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(66, 7, 7, 0.45),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../assets/hero-image.jpg) center/cover fixed;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 18rem;
+    z-index: 2;
+  }
 
-    &__h1{
-        position: absolute;
-        width: 100%;
-        bottom: 45%;
-        text-align: center;
-        z-index: 1;
+  &__h1 {
+    position: absolute;
+    width: 100%;
+    bottom: 45%;
+    text-align: center;
+    z-index: 1;
+  }
+  &__subheader {
+    margin: 1.4rem auto;
+    @include medium {
+      margin: 1.8rem auto;
     }
-    &__subheader{
-        margin: 1.4rem auto;
-        @include medium{
-            margin: 1.8rem auto;
-        }
-    }
-    &__btn{
-        margin-top: .5rem;
-    }
+  }
+  &__btn {
+    margin-top: 0.5rem;
+  }
 }

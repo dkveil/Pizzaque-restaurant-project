@@ -1,7 +1,7 @@
 @use "../01-settings/" as *;
 @use "../02-tools/" as *;
 
-.site-aboutus {
+.site-menu {
   padding-top: 9rem;
   padding-bottom: 5rem;
   background-color: $color-white;
@@ -11,18 +11,19 @@
     flex-direction: column;
     justify-content: center;
   }
+  &__headline {
+    margin-top: 5rem;
+  }
   &__icon {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
   }
   &__img-container {
-    margin-top: 5rem;
     @include medium {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0;
     }
   }
   &__btn {

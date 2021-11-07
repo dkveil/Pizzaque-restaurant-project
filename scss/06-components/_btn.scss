@@ -1,52 +1,52 @@
-@use '../01-settings/' as *;
-@use '../02-tools/' as *;
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
 
-.btn{
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    color: white;
-    cursor: pointer;
-    &--start{
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: .7rem 1.4rem;
-        background-color: $color-white;
-        border: 1px solid $color-white;
-        color: $color-red;
-        border-radius: .2rem;
-        transition: all .6s;
-        &:hover{
-            box-sizing: content-box;
-            color: $color-yellow;
-            border: 1px solid $color-yellow;
-            background-color: rgba(0, 0, 0, 0.3);
-            // color: $color-white;
-            // background-color: $color-brown;
-            box-shadow: 0 0 10px black;
-            transition: all .6s;
-        }
-        @include medium{
-            font-size: 1.6rem;
-
-        }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+  cursor: pointer;
+  &--start {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.7rem 1.4rem;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    color: $color-red;
+    border-radius: 0.2rem;
+    transition: all 0.6s;
+    &:hover {
+      box-sizing: content-box;
+      color: $color-yellow;
+      border: 1px solid $color-yellow;
+      background-color: rgba(0, 0, 0, 0.3);
+      // color: $color-white;
+      // background-color: $color-brown;
+      box-shadow: 0 0 10px black;
+      transition: all 0.6s;
     }
-    &--linkaboutus{
-        font-family: 'Courgette', cursive;
-        font-weight: bold;
-        font-size: 1.8rem;
-        color: $color-red;
-        text-align: center;
-        letter-spacing: 2px;
-        transition: color .6s;
-        &:hover{
-            color: $color-black;
-            transition: color .6s;
-        }
-        @include medium{
-            text-align: left;
-            font-size: 1.9rem;
-        }
+    @include medium {
+      font-size: 1.6rem;
     }
+  }
+  &--linkaboutus,
+  &--menu {
+    font-family: "Courgette", cursive;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $color-red;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: color 0.6s;
+    &:hover {
+      color: $color-black;
+      transition: color 0.6s;
+    }
+    @include medium {
+      text-align: left;
+      font-size: 1.9rem;
+    }
+  }
 }

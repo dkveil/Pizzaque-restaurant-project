@@ -1,27 +1,30 @@
-@use '../01-settings/' as *;
-@use '../02-tools/' as *;
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
 
-$usedspaces: (20:20%, 25:25%, 33:33.333333333% , 50:50%);
+$usedspaces: (
+  20: 20%,
+  25: 25%,
+  33: 33.333333333%,
+  50: 50%,
+);
 .col {
-    width:100%;
-    padding: 0 $gutter $gutter $gutter;
+  width: 100%;
+  padding: 0 $gutter $gutter $gutter;
 
-    @each $size,$percent in $usedspaces{
-
-        &--md#{$size}{
-            @include medium{
-                flex: 0 0 $percent;
-                max-width: $percent;
-            }
-        }
+  @each $size, $percent in $usedspaces {
+    &--md#{$size} {
+      @include medium {
+        flex: 0 0 $percent;
+        max-width: $percent;
+      }
     }
-    @each $size,$percent in $usedspaces{
-
-        &--lg#{$size}{
-            @include large{
-                flex: 0 0 $percent;
-                max-width: $percent;
-            }
-        }
+  }
+  @each $size, $percent in $usedspaces {
+    &--lg#{$size} {
+      @include large {
+        flex: 0 0 $percent;
+        max-width: $percent;
+      }
     }
+  }
 }

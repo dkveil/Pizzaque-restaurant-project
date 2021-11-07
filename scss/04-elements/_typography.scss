@@ -1,13 +1,12 @@
-@use '../01-settings/' as *;
-@use '../02-tools/' as *;
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
 
-p{
-    font-family: 'Lato', sans-serif;;
-    font-size: 1.8rem;
-    line-height: 1.5;
-    margin-top: $grid-base * 1.5;
-    @include medium{
-        padding: $grid-base;
-    }
-
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-top: $grid-base * 1.5;
+  @include medium {
+    padding: $grid-base;
+  }
 }
