@@ -8,30 +8,38 @@
         font-size: 5rem;
         text-shadow: 0 0 2px black;
         font-weight: 400;
+        letter-spacing: .2rem;
         @include medium{
             font-size: 6rem;
         }
         @include large{
-            font-size: 6.5rem;
+            font-size: 7rem;
         }
     }
     &--h2{
         font-family: 'Courgette', cursive;
-        font-size: 5rem;
+        font-size: 3.5rem;
+        font-weight: bold;
+        letter-spacing: .2rem;
         width: 100%;
         text-align: center;
+        @include large{
+            font-size: 4rem;
+        }
     }
     &--h4{
+        font-family: 'Courgette', cursive;
         position: relative;
+        letter-spacing: .2rem;
         // font-weight: 600;
         color: $color-white;
         font-size: 1.8rem;
         text-shadow: 0 0 1px black;
         @include medium{
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
         @include large{
-            font-size: 2rem;
+            font-size: 2.4rem;
         }
     }
 }

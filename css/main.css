@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Mr+Dafoe&display=swap");
 @import 'material-icons/iconfont/material-icons.css';
 *, *::before, *::after {
   box-sizing: border-box;
@@ -69,10 +69,15 @@ html {
 }
 
 p {
-  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
   line-height: 1.5;
-  padding: 10px;
   margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  p {
+    padding: 10px;
+  }
 }
 
 .container {
@@ -82,12 +87,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 740px;
+    max-width: 1000px;
   }
 }
 @media screen and (min-width: 1240px) {
   .container {
-    max-width: 1120px;
+    max-width: 1200px;
   }
 }
 
@@ -163,6 +168,7 @@ p {
   font-size: 5rem;
   text-shadow: 0 0 2px black;
   font-weight: 400;
+  letter-spacing: 0.2rem;
 }
 @media screen and (min-width: 768px) {
   .heading--h1 {
@@ -171,29 +177,38 @@ p {
 }
 @media screen and (min-width: 1240px) {
   .heading--h1 {
-    font-size: 6.5rem;
+    font-size: 7rem;
   }
 }
 .heading--h2 {
   font-family: "Courgette", cursive;
-  font-size: 5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
   width: 100%;
   text-align: center;
 }
+@media screen and (min-width: 1240px) {
+  .heading--h2 {
+    font-size: 4rem;
+  }
+}
 .heading--h4 {
+  font-family: "Courgette", cursive;
   position: relative;
+  letter-spacing: 0.2rem;
   color: white;
   font-size: 1.8rem;
   text-shadow: 0 0 1px black;
 }
 @media screen and (min-width: 768px) {
   .heading--h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1240px) {
   .heading--h4 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -239,6 +254,8 @@ p {
 }
 .nav__link:hover {
   color: #fcc45c;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   text-shadow: 0 0 10px black;
 }
 
@@ -253,17 +270,53 @@ p {
 .btn--start {
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 0.8rem 1.4rem;
+  padding: 0.7rem 1.4rem;
   background-color: white;
-  color: crimson;
+  border: 1px solid white;
+  color: #83182e;
   border-radius: 0.2rem;
   transition: all 0.6s;
 }
 .btn--start:hover {
+  box-sizing: content-box;
   color: #fcc45c;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 20px black;
+  border: 1px solid #fcc45c;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px black;
   transition: all 0.6s;
+}
+@media screen and (min-width: 768px) {
+  .btn--start {
+    font-size: 1.6rem;
+  }
+}
+.btn--linkaboutus {
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #83182e;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: color 0.6s;
+}
+.btn--linkaboutus:hover {
+  color: black;
+  transition: color 0.6s;
+}
+@media screen and (min-width: 768px) {
+  .btn--linkaboutus {
+    text-align: left;
+    font-size: 1.9rem;
+  }
+}
+
+.ion-md-restaurant {
+  font-size: 2.8rem;
+  color: #83182e;
+}
+
+.img {
+  max-width: 100%;
 }
 
 .site-header {
@@ -290,11 +343,11 @@ p {
   z-index: 1;
 }
 .site-header__subheader {
-  margin: 1.6rem auto;
+  margin: 1.4rem auto;
 }
 @media screen and (min-width: 768px) {
   .site-header__subheader {
-    margin: 2rem auto;
+    margin: 1.8rem auto;
   }
 }
 .site-header__btn {
@@ -398,6 +451,50 @@ p {
 }
 .site-nav__link:hover::before, .site-nav__link:hover::after {
   transform: scaleX(1);
+}
+
+.site-aboutus__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .site-aboutus__content {
+    height: 60vh;
+  }
+}
+.site-aboutus__headline {
+  margin-top: 9rem;
+}
+@media screen and (min-width: 768px) {
+  .site-aboutus__headline {
+    margin-top: 0;
+  }
+}
+.site-aboutus__icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.site-aboutus__img-container {
+  margin: 5rem auto 5rem auto;
+}
+@media screen and (min-width: 768px) {
+  .site-aboutus__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+.site-aboutus__btn {
+  margin-top: 4rem;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .site-aboutus__btn {
+    margin: 3rem auto 0 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

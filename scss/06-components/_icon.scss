@@ -1,0 +1,7 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
+
+.ion-md-restaurant{
+    font-size: 2.8rem;
+    color: $color-red;
+}

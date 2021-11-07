@@ -38,6 +38,8 @@
         transition: all 400ms;
         &:hover{
             color: $color-yellow;
+            background-color: rgba(#000000,0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
             text-shadow: 0 0 10px black;
         }
     }

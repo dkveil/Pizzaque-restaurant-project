@@ -7,11 +7,11 @@
     padding: 0 $gutter;
 
     @include medium{
-        max-width: 74 * $grid-base;
+        max-width: 100 * $grid-base;
     }
 
     @include large{
-        max-width: 112 * $grid-base;
+        max-width: 120 * $grid-base;
     }
 
 }
