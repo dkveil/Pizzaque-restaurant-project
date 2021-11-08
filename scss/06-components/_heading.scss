@@ -25,9 +25,11 @@
     @include large {
       font-size: 4rem;
     }
-    &--ad {
+    &--ad,
+    &--oh {
       color: $color-white;
-      text-shadow: 0 0 10px $color-red;
+      text-shadow: 0 0 20px $color-black;
+      letter-spacing: 0.4rem;
       font-size: 4rem;
       line-height: 1.2;
       @include medium {
@@ -36,11 +38,14 @@
     }
   }
   &-h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     font-family: "Courgette", cursive;
     color: white;
     text-align: center;
+    &--ohdaystress {
+      text-shadow: 0 0 40px $color-black;
+    }
   }
   &-h4 {
     font-family: "Courgette", cursive;

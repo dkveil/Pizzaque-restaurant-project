@@ -3,16 +3,20 @@
 
 .site-menu {
   padding-top: 9rem;
-  padding-bottom: 5rem;
+  padding-bottom: 9rem;
   background-color: $color-white;
   min-height: 60vh;
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // height: inherit;
   }
   &__headline {
     margin-top: 5rem;
+    @include medium {
+      margin: 0;
+    }
   }
   &__icon {
     display: flex;
