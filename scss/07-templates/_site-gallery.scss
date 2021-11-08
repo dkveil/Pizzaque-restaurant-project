@@ -4,6 +4,11 @@
 .site-gallery {
   padding-top: 9rem;
   padding-bottom: 9rem;
+  &__icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
   &__img-box {
     margin: 4rem auto;
   }

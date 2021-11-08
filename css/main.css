@@ -228,6 +228,9 @@ p.p--oh {
   color: white;
   text-align: center;
 }
+.heading-h3--yellow {
+  color: #fcc45c;
+}
 .heading-h4 {
   font-family: "Courgette", cursive;
   position: relative;
@@ -655,8 +658,14 @@ p.p--oh {
 .site-reserve__headline, .site-reserve__subline {
   width: 100%;
 }
+.site-reserve__icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
 .site-reserve__subline {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 6rem;
 }
 .site-reserve__hourscol {
@@ -678,6 +687,11 @@ p.p--oh {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
+.site-gallery__icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
 .site-gallery__img-box {
   margin: 4rem auto;
 }
@@ -691,7 +705,11 @@ p.p--oh {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
-.site-contact__headline {
+.site-contact__icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 .site-contact__contact-details {
@@ -720,6 +738,12 @@ p.p--oh {
 }
 .site-contact__map {
   width: 100%;
+}
+
+.site-footer-main {
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+  background-color: #1d080c;
 }
 
 .text-color-white {

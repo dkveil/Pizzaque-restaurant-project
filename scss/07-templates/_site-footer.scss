@@ -1,0 +1,8 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
+
+.site-footer-main {
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+  background-color: $color-dark-brown;
+}

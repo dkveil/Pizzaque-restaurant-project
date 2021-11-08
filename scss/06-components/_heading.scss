@@ -43,6 +43,9 @@
     font-family: "Courgette", cursive;
     color: white;
     text-align: center;
+    &--yellow {
+      color: $color-yellow;
+    }
   }
   &-h4 {
     font-family: "Courgette", cursive;
