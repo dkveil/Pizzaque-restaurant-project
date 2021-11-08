@@ -158,11 +158,11 @@
             </div>
         </section>
         <section class="site-contact">
-            <h2 class="heading-h2">Kontakt</h2>
+            <h2 class="heading-h2 text-color-white site-contact__headline">Kontakt</h2>
             <div class="container">
                 <div class="row">
                     <div class="col col--lg25">
-                        <form action="" class="form">
+                        <form action="" class="form site-contact__form">
                             <input type="text" class="form__item" id="name" placeholder="Wpisz swoje imię">
                             <input type="email" class="form__item" id="mail" placeholder="Wpisz swój adres e-mail">
                             <input type="text" class="form__item" id="number" required pattern="^[0-9]{9}$"
@@ -172,11 +172,20 @@
                             <input type="submit" class="form__item form__item--submit text-align-center" value="Wyślij">
                         </form>
                     </div>
-                    <div class="col col--lg25">
-                        <h3 class="logo logo--noshadow">PIZZAQUE</h3>
+                    <div class="col col--lg25 text-align-center site-contact__contact-details">
+                        <p class="logo logo--bigger logo--noshadow line-height-0 site-contact__logo">PIZZAQUE</p>
+                        <p class="text-bold text-color-white">Ul.Kowalska 1, Warszawa</p>
+                        <p class="text-color-white">Godziny otwarcia:<br>
+                            Poniedziałek - Czwartek 09:00 - 22:00<br>
+                            Piątek - Niedziela 12:00 - 23:00
+                        </p>
+                        <a href="#"
+                            class="btn btn--reserve btn--reserve-smallersize text-color-yellow site-contact__btn">Rezerwacja</a>
+                        <p class="text-color-white margin-top-0">123-123-123<br>
+                            pizzaque@pizzaque.com</p>
                     </div>
                     <div class="col col--lg50">
-                        <iframe class="map"
+                        <iframe class="map site-contact__map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5045434.97393495!2d14.648919655016048!3d51.86841832815053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47009964a4640bbb%3A0x97573ca49cc55ea!2sPolska!5e0!3m2!1spl!2spl!4v1636400725765!5m2!1spl!2spl"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>

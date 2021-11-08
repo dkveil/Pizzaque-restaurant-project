@@ -6,4 +6,10 @@
   font-family: "Courgette", cursive;
   color: $color-white;
   text-shadow: 0 0 2px black;
+  //   &--bigger {
+  //     font-size: 4.5rem;
+  //   }
+  &--noshadow {
+    text-shadow: none;
+  }
 }

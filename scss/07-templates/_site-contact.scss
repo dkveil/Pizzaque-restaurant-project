@@ -2,11 +2,33 @@
 @use "../02-tools/" as *;
 
 .site-contact {
-  background-color: $color-yellow;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../assets/site-contact2.jpg) center/cover fixed;
   padding-top: 9rem;
   padding-bottom: 9rem;
-  &__form {
-    margin-top: auto;
-    margin-bottom: auto;
+  &__headline {
+    margin-bottom: 4rem;
+  }
+  &__contact-details {
+    margin: 6rem auto;
+
+    @include large {
+      margin: 0;
+    }
+  }
+  &__logo {
+    margin-bottom: 4rem;
+    @include large {
+      margin-bottom: 2rem;
+    }
+  }
+  &__btn {
+    margin: 4rem auto;
+    @include large {
+      margin: 3rem auto;
+    }
+  }
+  &__map {
+    width: 100%;
   }
 }

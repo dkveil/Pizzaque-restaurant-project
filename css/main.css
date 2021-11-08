@@ -175,6 +175,9 @@ p.p--oh {
   color: #fdfdfd;
   text-shadow: 0 0 2px black;
 }
+.logo--noshadow {
+  text-shadow: none;
+}
 
 .heading-h1 {
   color: #fdfdfd;
@@ -345,6 +348,9 @@ p.p--oh {
 .btn--reserve:hover {
   color: #fdfdfd;
 }
+.btn--reserve-smallersize {
+  font-size: 2.6rem;
+}
 
 .ion-md-restaurant {
   font-size: 2.8rem;
@@ -369,6 +375,7 @@ p.p--oh {
   width: 95%;
 }
 .form__item {
+  color: #fcc45c;
   font-family: inherit;
   font-size: 1.8rem;
   margin-bottom: 0.6rem;
@@ -380,17 +387,21 @@ p.p--oh {
   padding-bottom: 0.2rem;
   margin-bottom: 4rem;
   border: none;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #fcc45c;
   background: transparent;
   outline: 0;
   resize: none;
 }
 .form__item:focus {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   transition: 0.5s;
+  color: #fcc45c;
 }
 .form__item--submit {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.4);
+}
+.form__item::placeholder {
+  color: #ca9c47;
 }
 
 .site-header {
@@ -676,13 +687,39 @@ p.p--oh {
 }
 
 .site-contact {
-  background-color: #fcc45c;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/site-contact2.jpg) center/cover fixed;
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
-.site-contact__form {
-  margin-top: auto;
-  margin-bottom: auto;
+.site-contact__headline {
+  margin-bottom: 4rem;
+}
+.site-contact__contact-details {
+  margin: 6rem auto;
+}
+@media screen and (min-width: 1240px) {
+  .site-contact__contact-details {
+    margin: 0;
+  }
+}
+.site-contact__logo {
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 1240px) {
+  .site-contact__logo {
+    margin-bottom: 2rem;
+  }
+}
+.site-contact__btn {
+  margin: 4rem auto;
+}
+@media screen and (min-width: 1240px) {
+  .site-contact__btn {
+    margin: 3rem auto;
+  }
+}
+.site-contact__map {
+  width: 100%;
 }
 
 .text-color-white {
@@ -699,6 +736,18 @@ p.p--oh {
 
 .text-bold {
   font-weight: bold;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.line-height-0 {
+  line-height: 0;
+}
+
+.margin-top-0 {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
