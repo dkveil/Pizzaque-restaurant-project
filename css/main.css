@@ -582,33 +582,33 @@ p.p--oh {
   }
 }
 
-.site-oh {
+.site-reserve {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/adoh1.jpg) center/cover fixed;
   min-height: 60vh;
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
 @media screen and (min-width: 768px) {
-  .site-oh {
+  .site-reserve {
     min-height: 40vh;
     padding-top: 6rem;
     padding-bottom: 8rem;
   }
 }
-.site-oh__headline, .site-oh__subline {
+.site-reserve__headline, .site-reserve__subline {
   width: 100%;
 }
-.site-oh__subline {
+.site-reserve__subline {
   margin-top: 0.5rem;
   margin-bottom: 2.5rem;
 }
-.site-oh__hourscol {
+.site-reserve__hourscol {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.site-oh__btn {
+.site-reserve__btn {
   width: 100%;
   display: flex;
   justify-content: center;
