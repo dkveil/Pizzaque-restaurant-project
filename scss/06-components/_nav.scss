@@ -7,14 +7,6 @@
   @include medium {
     background-color: transparent;
   }
-  &__logo {
-    font-size: 4rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Courgette", cursive;
-    color: $color-white;
-    text-shadow: 0 0 2px black;
-  }
   &__item {
     font-size: 1.6rem;
     line-height: 8rem;

@@ -1,0 +1,12 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
+
+.site-contact {
+  background-color: $color-yellow;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  &__form {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

@@ -167,6 +167,15 @@ p.p--oh {
   }
 }
 
+.logo {
+  font-size: 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Courgette", cursive;
+  color: #fdfdfd;
+  text-shadow: 0 0 2px black;
+}
+
 .heading-h1 {
   color: #fdfdfd;
   font-family: "Courgette", cursive;
@@ -243,14 +252,6 @@ p.p--oh {
     background-color: transparent;
   }
 }
-.nav__logo {
-  font-size: 4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Courgette", cursive;
-  color: #fdfdfd;
-  text-shadow: 0 0 2px black;
-}
 .nav__item {
   font-size: 1.6rem;
   line-height: 8rem;
@@ -313,7 +314,7 @@ p.p--oh {
     font-size: 1.6rem;
   }
 }
-.btn--linkaboutus, .btn--menu, .btn--reserve, .btn--gallery {
+.btn--linkaboutus, .btn--menu, .btn--reserve, .btn--gallery, .btn--form {
   font-family: "Courgette", cursive;
   font-weight: bold;
   font-size: 1.8rem;
@@ -323,10 +324,14 @@ p.p--oh {
   transition: color 0.6s;
 }
 @media screen and (min-width: 768px) {
-  .btn--linkaboutus, .btn--menu, .btn--reserve, .btn--gallery {
+  .btn--linkaboutus, .btn--menu, .btn--reserve, .btn--gallery, .btn--form {
     text-align: left;
     font-size: 1.9rem;
   }
+}
+.btn--form {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
 }
 .btn--reserve {
   font-size: 3rem;
@@ -358,6 +363,34 @@ p.p--oh {
   border: 1px solid #fcc45c;
   height: 20rem;
   background: url(../../assets/galery1.jpg) center/cover;
+}
+
+.form {
+  width: 95%;
+}
+.form__item {
+  font-family: inherit;
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  display: block;
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 4rem;
+  border: none;
+  border-bottom: 3px solid black;
+  background: transparent;
+  outline: 0;
+  resize: none;
+}
+.form__item:focus {
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.form__item--submit {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .site-header {
@@ -640,6 +673,16 @@ p.p--oh {
 .site-gallery__btn {
   display: flex;
   justify-content: center;
+}
+
+.site-contact {
+  background-color: #fcc45c;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.site-contact__form {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .text-color-white {

@@ -31,10 +31,12 @@
       font-size: 1.6rem;
     }
   }
+
   &--linkaboutus,
   &--menu,
   &--reserve,
-  &--gallery {
+  &--gallery,
+  &--form {
     font-family: "Courgette", cursive;
     font-weight: bold;
     font-size: 1.8rem;
@@ -47,6 +49,10 @@
       text-align: left;
       font-size: 1.9rem;
     }
+  }
+  &--form {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
   }
   &--reserve {
     font-size: 3rem;

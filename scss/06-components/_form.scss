@@ -1,0 +1,31 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
+
+.form {
+  width: 95%;
+
+  &__item {
+    font-family: inherit;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 4rem;
+    border: none;
+    border-bottom: 3px solid black;
+    background: transparent;
+    outline: 0;
+    resize: none;
+    &:focus {
+      background: rgba(0, 0, 0, 0.3);
+      transition: 0.5s;
+    }
+    &--submit {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
