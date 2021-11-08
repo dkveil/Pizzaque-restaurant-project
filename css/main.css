@@ -647,7 +647,7 @@ p.p--oh {
 }
 
 .site-ad {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/ad1.jpg) center/cover fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/ad1.jpg) center/cover fixed;
   display: none;
   align-items: center;
   height: 25vh;
@@ -706,7 +706,7 @@ p.p--oh {
 }
 
 .site-reserve {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/adoh1.jpg) center/cover fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/adoh1.jpg) center/cover fixed;
   min-height: 60vh;
   padding-top: 9rem;
   padding-bottom: 9rem;
