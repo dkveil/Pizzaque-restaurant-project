@@ -1,0 +1,14 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
+
+.site-gallery {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  &__img-box {
+    margin: 4rem auto;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../01-settings/" as *;
+
+.img-box {
+  &__image {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 8px $color-black;
+    border: 1px solid $color-yellow;
+    height: 20rem;
+    background: url(../../assets/galery1.jpg) center/cover;
+  }
+}

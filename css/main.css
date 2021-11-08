@@ -201,12 +201,12 @@ p.p--oh {
   color: #fdfdfd;
   text-shadow: 0 0 20px black;
   letter-spacing: 0.4rem;
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 1.2;
 }
 @media screen and (min-width: 768px) {
   .heading-h2--ad, .heading-h2--oh {
-    font-size: 5rem;
+    font-size: 4.4rem;
   }
 }
 .heading-h3 {
@@ -313,7 +313,7 @@ p.p--oh {
     font-size: 1.6rem;
   }
 }
-.btn--linkaboutus, .btn--menu, .btn--reserve {
+.btn--linkaboutus, .btn--menu, .btn--reserve, .btn--gallery {
   font-family: "Courgette", cursive;
   font-weight: bold;
   font-size: 1.8rem;
@@ -323,7 +323,7 @@ p.p--oh {
   transition: color 0.6s;
 }
 @media screen and (min-width: 768px) {
-  .btn--linkaboutus, .btn--menu, .btn--reserve {
+  .btn--linkaboutus, .btn--menu, .btn--reserve, .btn--gallery {
     text-align: left;
     font-size: 1.9rem;
   }
@@ -331,10 +331,10 @@ p.p--oh {
 .btn--reserve {
   font-size: 3rem;
 }
-.btn--linkaboutus:hover, .btn--men:hover, .btn--reserve:hover {
+.btn--linkaboutus:hover, .btn--men:hover, .btn--reserve:hover, .btn--gallery:hover {
   transition: color 0.6s;
 }
-.btn--linkaboutus:hover, .btn--men:hover {
+.btn--linkaboutus:hover, .btn--menu:hover, .btn--gallery:hover {
   color: black;
 }
 .btn--reserve:hover {
@@ -348,6 +348,16 @@ p.p--oh {
 
 .img {
   max-width: 100%;
+  border: 2px solid #fcc45c;
+}
+
+.img-box__image {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 8px black;
+  border: 1px solid #fcc45c;
+  height: 20rem;
+  background: url(../../assets/galery1.jpg) center/cover;
 }
 
 .site-header {
@@ -453,7 +463,7 @@ p.p--oh {
 }
 @media screen and (min-width: 1240px) {
   .site-nav__item {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 }
 .site-nav__item:last-child {
@@ -618,6 +628,18 @@ p.p--oh {
   align-items: center;
   flex-direction: column;
   margin-top: 2rem;
+}
+
+.site-gallery {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.site-gallery__img-box {
+  margin: 4rem auto;
+}
+.site-gallery__btn {
+  display: flex;
+  justify-content: center;
 }
 
 .text-color-white {
