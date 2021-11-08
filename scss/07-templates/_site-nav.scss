@@ -59,6 +59,8 @@
     }
   }
   &__item {
+    // display: flex;
+    // justify-content: center;
     @include medium {
       margin: 0 0.8rem;
     }
@@ -71,7 +73,6 @@
   }
   &__link {
     position: relative;
-
     &::before,
     &::after {
       content: "";

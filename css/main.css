@@ -82,8 +82,6 @@ p {
   }
 }
 p.p--oh {
-  color: #fdfdfd;
-  font-weight: bold;
   font-size: 2.6rem;
 }
 
@@ -218,9 +216,6 @@ p.p--oh {
   color: white;
   text-align: center;
 }
-.heading-h3--ohdaystress {
-  text-shadow: 0 0 40px black;
-}
 .heading-h4 {
   font-family: "Courgette", cursive;
   position: relative;
@@ -318,7 +313,7 @@ p.p--oh {
     font-size: 1.6rem;
   }
 }
-.btn--linkaboutus, .btn--menu {
+.btn--linkaboutus, .btn--menu, .btn--reserve {
   font-family: "Courgette", cursive;
   font-weight: bold;
   font-size: 1.8rem;
@@ -327,15 +322,20 @@ p.p--oh {
   letter-spacing: 2px;
   transition: color 0.6s;
 }
-.btn--linkaboutus:hover, .btn--menu:hover {
-  color: black;
-  transition: color 0.6s;
-}
 @media screen and (min-width: 768px) {
-  .btn--linkaboutus, .btn--menu {
+  .btn--linkaboutus, .btn--menu, .btn--reserve {
     text-align: left;
     font-size: 1.9rem;
   }
+}
+.btn--linkaboutus:hover, .btn--men:hover, .btn--reserve:hover {
+  transition: color 0.6s;
+}
+.btn--linkaboutus:hover, .btn--men:hover {
+  color: black;
+}
+.btn--reserve:hover {
+  color: #fdfdfd;
 }
 
 .ion-md-restaurant {
@@ -483,9 +483,14 @@ p.p--oh {
 
 .site-aboutus {
   padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-bottom: 3rem;
   background-color: #fdfdfd;
   min-height: 60vh;
+}
+@media screen and (min-width: 768px) {
+  .site-aboutus {
+    padding-bottom: 9rem;
+  }
 }
 .site-aboutus__content {
   display: flex;
@@ -519,22 +524,28 @@ p.p--oh {
 }
 
 .site-ad {
-  background: linear-gradient(to bottom, rgba(66, 7, 7, 0.45), rgba(0, 0, 0, 0.9)), url(../assets/ad.jpg) center/cover fixed;
-  display: flex;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/ad1.jpg) center/cover fixed;
+  display: none;
   align-items: center;
   height: 25vh;
 }
 @media screen and (min-width: 768px) {
   .site-ad {
     height: 30vh;
+    display: flex;
   }
 }
 
 .site-menu {
-  padding-top: 9rem;
+  padding-top: 3rem;
   padding-bottom: 9rem;
   background-color: #fdfdfd;
   min-height: 60vh;
+}
+@media screen and (min-width: 768px) {
+  .site-menu {
+    padding-top: 9rem;
+  }
 }
 .site-menu__content {
   display: flex;
@@ -572,7 +583,7 @@ p.p--oh {
 }
 
 .site-oh {
-  background: linear-gradient(to bottom, rgba(49, 6, 6, 0.5), rgba(0, 0, 0, 0.9)), url(../assets/site-invite2.jpg) center/cover fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/adoh1.jpg) center/cover fixed;
   min-height: 60vh;
   padding-top: 9rem;
   padding-bottom: 9rem;
@@ -584,8 +595,12 @@ p.p--oh {
     padding-bottom: 8rem;
   }
 }
-.site-oh__headline {
+.site-oh__headline, .site-oh__subline {
   width: 100%;
+}
+.site-oh__subline {
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 .site-oh__hourscol {
   display: flex;
@@ -593,8 +608,29 @@ p.p--oh {
   justify-content: center;
   align-items: center;
 }
-.site-oh__subline:first-child {
-  margin-top: 3rem;
+.site-oh__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.text-color-white {
+  color: #fdfdfd;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-color-yellow {
+  color: #fcc45c;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
