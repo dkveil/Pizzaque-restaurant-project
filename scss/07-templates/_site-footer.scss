@@ -2,7 +2,12 @@
 @use "../02-tools/" as *;
 
 .site-footer-main {
-  padding-top: 3rem;
-  padding-bottom: 9rem;
-  background-color: $color-dark-brown;
+  padding-top: 6rem;
+  background-color: $color-dark-grey;
+  &__icon-box {
+    margin: 2rem auto;
+  }
+  &__scrollbtn {
+    margin-top: 3rem;
+  }
 }

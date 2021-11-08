@@ -251,7 +251,7 @@ p.p--oh {
 }
 
 .nav {
-  background-color: #333333;
+  background-color: #313131;
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -296,6 +296,9 @@ p.p--oh {
   letter-spacing: 0.1rem;
   color: white;
   cursor: pointer;
+}
+.btn--small {
+  font-size: 1.8rem;
 }
 .btn--start {
   font-size: 1.5rem;
@@ -353,6 +356,21 @@ p.p--oh {
 }
 .btn--reserve-smallersize {
   font-size: 2.6rem;
+}
+
+.icon-box {
+  color: #fcc45c;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.icon-box__icon {
+  margin: auto 4rem;
+}
+.icon-box__icon:hover {
+  color: #fdfdfd;
+  transition: 0.5s;
 }
 
 .ion-md-restaurant {
@@ -741,9 +759,14 @@ p.p--oh {
 }
 
 .site-footer-main {
-  padding-top: 3rem;
-  padding-bottom: 9rem;
-  background-color: #1d080c;
+  padding-top: 6rem;
+  background-color: #181818;
+}
+.site-footer-main__icon-box {
+  margin: 2rem auto;
+}
+.site-footer-main__scrollbtn {
+  margin-top: 3rem;
 }
 
 .text-color-white {

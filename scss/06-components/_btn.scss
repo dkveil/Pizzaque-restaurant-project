@@ -8,6 +8,9 @@
   letter-spacing: 0.1rem;
   color: white;
   cursor: pointer;
+  &--small {
+    font-size: 1.8rem;
+  }
   &--start {
     font-size: 1.5rem;
     font-weight: bold;
